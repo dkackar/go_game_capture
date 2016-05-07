@@ -1,0 +1,55 @@
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+	CAPTURED BLACK after moving WHITE to row 5, col 5
+
+Board
+  #check non captures
+    series of black only moves does not result in capture
+    series of white only moves does not result in capture
+    series of black only moves with horizontal boundary does not result in capture
+    series of white only moves with vertical boundary does not result in capture
+    1 black move surrounded by 3 white moves with 1 missing white piece
+    1 white move surrounded by 3 black moves with 1 missing white piece
+    2 horizontal black moves surrounded by 5 white moves with 1 missing white piece
+    2 vertical black moves surrounded by 5 white moves with 1 missing left white piece
+    2 vertical black moves surrounded by 5 white moves with 1 missing right white piece
+    2 vertical black moves surrounded by 5 white moves with 1 missing top white move
+    2 vertical black moves surrounded by 5 white moves with 1 missing bottom white piece
+  #check simple captures
+    1 black move surrounded by all white moves
+    1 white move surrounded by all black moves
+    2 horizontal white moves surrounded by all black moves
+    2 vertical black moves surrounded by all white moves
+    2 vertical white moves surrounded by all black moves
+    2 vertical black moves surrounded by white moves and top horizontal boundary
+    2 vertical white moves surrounded by black moves and bottom horizontal boundary
+    L shaped white moves surrounded by black moves
+    C shaped black moves surrounded by white moves
+    T shaped black moves surrounded by white moves
+    Diagonal shaped black moves surrounded by white moves
+    Black row and then White row bounded by top horizontal boundary
+    Black row and then White row bounded by bottom horizontal boundary
+    White row between Black row and bottom horizontal boundary (suicide)
+    Black column and then White column bounded by left vertical boundary
+
+Finished in 0.00691 seconds (files took 0.0922 seconds to load)
+26 examples, 0 failures
+
