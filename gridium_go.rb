@@ -59,8 +59,8 @@ class Board
   end
 
   def move(color, row, col)
-
     move_piece(color, row, col)
+
     #Check the adjacency for opponent captures
     if check_adjacents(color,row,col)
        puts "\n\tCAPTURED #{color_string(opponent_color(color))} "\
@@ -80,7 +80,6 @@ class Board
 
   #This method will check 4 adjacent squares 
   def check_adjacents(color,row,col)
-    
     is_capture = false
 
     @@ADJACENTS.each do |xy_pos|
@@ -93,13 +92,11 @@ class Board
     end
     
     is_capture
-
   end
 
   #recursive function to check if a collection of "opponet stones"
   #are bound by boundary of player stones
   def check_capture(opp_color,row,col,ignore_pos=nil,arr = [])
-
     is_capture = true
      
     @@ADJACENTS.each do |xy_pos|
@@ -116,14 +113,12 @@ class Board
           is_capture = check_capture(opp_color,r1,c1,[row,col]) if ignore_pos != [r1,c1]
           break if !is_capture
         end
-
       end
 
     end
 
     return is_capture
-  end 
-
+  end
 end
 
 

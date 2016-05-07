@@ -61,7 +61,6 @@ class Board(object):
         return self.board[row][col] == EMPTY
 
     def check_adjacents(self,color,row,col):
-    
         is_capture = False
 
         for xy_pos in ADJACENTS:
@@ -77,7 +76,6 @@ class Board(object):
     #recursive function to check if a collection of "opponet stones"
     #are bound by boundary of player stones
     def check_capture(self,opp_color,row,col,ignore_pos=None):
-
         is_capture = True
      
         for xy_pos in ADJACENTS:
@@ -113,7 +111,6 @@ class Board(object):
         if self.check_adjacents(self.opponent_color(color),row,col):
            print "\n\tSUICIDE by %s after moving to row %d, col %d"\
                 % (self.color_string(color), row, col)
-
 
 
 print "=======================================================================\n"
